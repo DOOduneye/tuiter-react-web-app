@@ -24,7 +24,6 @@
 <main
         class="container-fluid container-xxl container-xl container-lg container-md container-sm mt-2">
     <!-- Options XXL, XL, LG -->
-<!--    <div class="row">-->
     <nav
             class="w-100 col-4 pe-4 w-25 d-sm-none d-md-none d-xxl-block d-xl-block d-lg-block">
         <div class="card">
@@ -116,7 +115,7 @@
 
 
     <!-- Options Medium & Small -->
-    <nav class="w-100 col-4 ps-5 pe-4 w-25 d-xxl-none d-xl-none d-lg-none d-sm-block d-md-block">
+    <nav class="w-100 col-4 pe-4 w-25 d-xxl-none d-xl-none d-lg-none d-sm-block d-md-block">
         <div class="card">
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">
@@ -204,16 +203,17 @@
         </div>
     </nav>
 
-    <section class="mb-3 col-12 pe-4">
+    <section class="mb-3 col-12">
         <header class="row">
             <!-- Search -->
             <div class="col input-group pb-2">
-                    <span class="input-group-text bg-white border-dark border-right-0 wd-border-radius-20-0-0-20"
-                          id="basic-addon1">
+                    <span
+                            class="input-group-text bg-white border-dark border-end-0 wd-border-radius-20-0-0-20"
+                            id="basic-addon1">
                         <i class="fa-solid fa-search"></i>
                     </span>
                 <input type="text"
-                       class="form-control border-left-0 border-dark wd-border-radius-0-20-20-0"
+                       class="form-control border-dark border-start-0 wd-border-radius-0-20-20-0"
                        placeholder="Search Tuiter"
                        aria-label="Username" aria-describedby="basic-addon1">
             </div>
@@ -250,15 +250,15 @@
 
         <section class="row card text-white">
             <img src="res/starship.png" class="card-img rounded-0 p-0" alt="starship">
-            <div class="card-img-overlay">
+            <div class="card-img-overlay d-flex align-items-end">
                 <h5 class="card-title fw-bold fs-2">SpaceX's Starship</h5>
             </div>
         </section>
 
         <section class="row w-auto">
             <section class="card border-1 border-dark rounded-0">
-                <div class="row">
-                    <div class="col-md-9 ps-0 pe-0">
+                <div class="row flex-row">
+                    <div class="col-9 ps-0 pe-0">
                         <div class="card-body">
                             <h5 class="card-title">
                                 <small class="text-muted fs-6 fw-normal">Web Development</small>
@@ -274,7 +274,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-3 align-self-center">
+                    <div class="col-3 align-self-center">
                         <img src="res/react.svg" class="img-fluid align-middle rounded-3"
                              alt="react">
                     </div>
@@ -283,7 +283,7 @@
 
             <section class="card border-1 border-dark rounded-0">
                 <div class="row">
-                    <div class="col-md-9 ps-0 pe-0">
+                    <div class="col-9 ps-0 pe-0">
                         <div class="card-body">
                             <p class="card-title fw-bolder">
                                 Javascript
@@ -301,7 +301,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-3 align-self-center">
+                    <div class="col-3 align-self-center">
                         <img src="res/javascript.png" class="img-fluid align-middle rounded-3"
                              alt="react">
                     </div>
@@ -310,7 +310,7 @@
 
             <section class="card border-1 border-dark rounded-0">
                 <div class="row">
-                    <div class="col-md-9 ps-0 pe-0">
+                    <div class="col-9 ps-0 pe-0">
                         <div class="card-body">
                             <h5 class="card-title">
                                 <small class="text-muted fs-6 fw-normal">Web Development</small>
@@ -325,7 +325,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-3 align-self-center">
+                    <div class="col-3 align-self-center">
                         <img src="res/jquery.png" class="img-fluid align-middle rounded-3"
                              alt="react">
                     </div>
@@ -334,7 +334,7 @@
 
             <section class="card border-1 border-dark rounded-0">
                 <div class="row">
-                    <div class="col-md-9 ps-0 pe-0">
+                    <div class="col-9 ps-0 pe-0">
                         <div class="card-body">
                             <h5 class="card-title">
                                 <small class="text-muted fs-6 fw-normal">Web Development</small>
@@ -351,7 +351,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-3 align-self-center">
+                    <div class="col-3 align-self-center">
                         <img src="res/nodejs.png" class="img-fluid align-middle rounded-3"
                              alt="react">
                     </div>
@@ -364,7 +364,7 @@
 
     <!-- Who to follow -->
     <section
-            class="w-100 col-1 d-sm-none d-md-none d-xxl-block d-xl-block d-lg-block">
+            class="w-100 ms-4 col-1 d-sm-none d-md-none d-xxl-block d-xl-block d-lg-block">
         <div class="card">
             <ul class="list-group list-group-flush">
                 <li class="list-group-item fw-bold fst-normal">
@@ -516,15 +516,6 @@
             </ul>
         </div>
     </section>
-<!--</div>-->
-
-    <div class="d-block d-sm-none fa-2x">XS</div>
-    <div class="d-none d-sm-block d-md-none fa-2x">S</div>
-    <div class="d-none d-md-block d-lg-none fa-2x">M</div>
-    <div class="d-none d-lg-block d-xl-none fa-2x">L</div>
-    <div class="d-none d-xl-block d-xxl-none fa-2x">XL</div>
-    <div class="d-none d-xxl-block fa-2x">XXL</div>
-
 </main>
 </body>
 </html>
