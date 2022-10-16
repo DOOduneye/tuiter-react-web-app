@@ -1,5 +1,5 @@
 import NavigationSidebar from "../NavigationSidebar/NavigationSidebar.js";
-import ExploreComponent from "../ExploreScreen/ExploreComponent.js";
+import ExploreComponent from "./ExploreComponent.js";
 import WhoToFollowList from "../WhoToFollowList/WhoToFollowList.js";
 
 const exploreComponent = () => {

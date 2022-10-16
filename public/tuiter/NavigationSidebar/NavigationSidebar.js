@@ -12,7 +12,7 @@ const NavigationSidebar = () => {
                 </span>
             </a>
 
-            <a class="list-group-item bg-primary text-white" href="../explore/explore.html">
+            <a class="list-group-item bg-primary text-white" href="../ExploreScreen/explore.html">
                 <i class="fa-solid fa-hashtag"></i>
                 <span class="d-none d-xl-inline d-xxl-inline">
                     Explore
