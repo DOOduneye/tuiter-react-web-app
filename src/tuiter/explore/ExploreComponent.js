@@ -33,13 +33,13 @@ const ExploreComponent = () => {
             </a>
         </li>
         <li className="nav-item">
-            <a className="nav-link text-black bg-white rounded-1" href="trending.html">Trending</a>
+            <a className="nav-link rounded-1" href="trending.html">Trending</a>
         </li>
         <li className="nav-item">
-            <a className="nav-link text-black bg-white rounded-1" href="news.html">News</a>
+            <a className="nav-link rounded-1" href="news.html">News</a>
         </li>
         <li className="nav-item">
-            <a className="nav-link text-black bg-white rounded-1" href="sports.html">Sports</a>
+            <a className="nav-link rounded-1" href="sports.html">Sports</a>
         </li>
         <li className="nav-item d-sm-none d-none d-sm-inline d-md-inline d-lg-inline d-xxl-inline d-xl-inline">
             <a className="nav-link rounded-1" href="entertainment">
