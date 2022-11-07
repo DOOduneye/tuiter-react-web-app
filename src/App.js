@@ -14,10 +14,10 @@ const App = () => {
           <div className="container">
               <Routes>
                   <Route index element={<Labs/>}/>
-                  <Route path="/a7" element={<Assignment7 />}/>
-                  <Route path="/hello" element={<HelloWorld/>}/>
-                  <Route path="/tuiter" element={<Home />}/>
-                  <Route path="/explore" element={<Tuiter />}/>
+                  <Route path="a7" element={<Assignment7 />}/>
+                  <Route path="hello" element={<HelloWorld/>}/>
+                  <Route path="tuiter" element={<Home />}/>
+                  <Route path="explore" element={<Tuiter />}/>
               </Routes>
           </div>
       </BrowserRouter>
