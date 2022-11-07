@@ -6,7 +6,11 @@ import {Routes, Route} from "react-router";
 function Labs() {
  return (
    <div>
-     <Nav/>
+      <Nav />
+     <Routes>
+       <Route index element={<Assignment6/>}/>
+       <Route path="a7" element={<Assignment7/>}/>
+     </Routes>
    </div>
  );
 }
