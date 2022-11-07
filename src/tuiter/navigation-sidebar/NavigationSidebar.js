@@ -18,7 +18,7 @@ const NavigationSidebar = ({active = 'explore'}) => {
                 </a>
 
                 <a className={`list-group-item
-                    ${active === 'explore'?'active':''}`} href="/explore">
+                    ${active === 'explore'?'active':''}`} href="/tuiter/explore">
                     <i className="fa-solid fa-hashtag"></i>
                     <span className="p-1 d-none d-xl-inline d-xxl-inline">
                         Explore
@@ -26,7 +26,7 @@ const NavigationSidebar = ({active = 'explore'}) => {
                 </a>
 
                 <a className={`list-group-item
-                    ${active === 'notifications'?'active':''}`} href="/notifications">
+                    ${active === 'notifications'?'active':''}`} href="/tuiter/notifications">
                     <i className="fa-solid fa-bell"></i> 
                     <span className="p-1 d-none d-xl-inline d-xxl-inline">
                         Notifications
@@ -34,7 +34,7 @@ const NavigationSidebar = ({active = 'explore'}) => {
                 </a>
 
                 <a className={`list-group-item
-                    ${active === 'messages'?'active':''}`} href="/messages">
+                    ${active === 'messages'?'active':''}`} href="/tuiter/messages">
                     <i className="fa-solid fa-envelope"></i>
                     <span className="p-1 d-none d-xl-inline d-xxl-inline">
                         Messages
@@ -42,7 +42,7 @@ const NavigationSidebar = ({active = 'explore'}) => {
                 </a>
 
                 <a className={`list-group-item
-                    ${active === 'bookmarks'?'active':''}`} href="/bookmarks">
+                    ${active === 'bookmarks'?'active':''}`} href="/tuiter/bookmarks">
                     <i className="fa-solid fa-bookmark"></i>
                     <span className="p-1 d-none d-xl-inline d-xxl-inline">
                         Bookmarks
@@ -50,7 +50,7 @@ const NavigationSidebar = ({active = 'explore'}) => {
                 </a>
 
                 <a className={`list-group-item
-                    ${active === 'lists'?'active':''}`} href="/lists">
+                    ${active === 'lists'?'active':''}`} href="/tuiter/lists">
                     <i className="fa-solid fa-list"></i>
                     <span className="p-1 d-none d-xl-inline d-xxl-inline">
                         Lists
@@ -58,7 +58,7 @@ const NavigationSidebar = ({active = 'explore'}) => {
                 </a>
 
                 <a className={`list-group-item
-                    ${active === 'profile'?'active':''}`} href="/profile">
+                    ${active === 'profile'?'active':''}`} href="/tuiter/profile">
                     <i className="fa-solid fa-user"></i>
                     <span className="p-1 d-none d-xl-inline d-xxl-inline">
                         Profile
@@ -66,7 +66,7 @@ const NavigationSidebar = ({active = 'explore'}) => {
                 </a>
 
                 <a className={`list-group-item
-                    ${active === 'more'?'active':''}`} href="/more">
+                    ${active === 'more'?'active':''}`} href="/tuiter/more">
                     <i className="fa-solid fa-ellipsis-h"></i>
                     <span className="p-1 d-none d-xl-inline d-xxl-inline">
                         More

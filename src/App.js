@@ -12,10 +12,10 @@ const App = () => {
       <BrowserRouter>
           <div className="container">
               <Routes>
-                  <Route index element={<Labs/>}/>
-                  <Route path="/*" element={<Labs/>}/>
-                  <Route path="/hello" element={<HelloWorld/>}/>
-                  <Route path="/explore" element={<Tuiter />}/>
+                  <Route index element={<Labs />}/>
+                  <Route path="/*" element={<Labs />}/>
+                  <Route path="/hello" element={<HelloWorld />}/>
+                  <Route path="/tuiter/explore" element={<Tuiter />}/>
                   <Route path="/tuiter" element={<Home />}/>
               </Routes>
           </div>
