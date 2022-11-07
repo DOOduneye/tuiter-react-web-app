@@ -6,6 +6,7 @@ import Home from "./tuiter/Home";
 
 import {BrowserRouter} from "react-router-dom";
 import {Routes, Route} from "react-router";
+import Assignment7 from './labs/a7';
 
 const App = () => {
   return (
@@ -13,9 +14,10 @@ const App = () => {
           <div className="container">
               <Routes>
                   <Route index element={<Labs/>}/>
+                  <Route path="/a7" element={<Assignment7 />}/>
                   <Route path="/hello" element={<HelloWorld/>}/>
-                  <Route path="/explore" element={<Home />}/>
-                  <Route path="/tuiter" element={<Tuiter />}/>
+                  <Route path="/tuiter" element={<Home />}/>
+                  <Route path="/explore" element={<Tuiter />}/>
               </Routes>
           </div>
       </BrowserRouter>
