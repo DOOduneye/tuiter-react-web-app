@@ -1,6 +1,6 @@
 import React from "react";
 
-const WhoToFollowListItem = ({who = { userName: 'NASA', handle: 'NASA', avatarIcon: 'tuiter/res/nasa.png' }}) => {
+const WhoToFollowListItem = ({who = { userName: 'NASA', handle: 'NASA', avatarIcon: 'tuiters/res/nasa.png' }}) => {
  return (
     <div className="list-group-item d-flex flex-nowrap">     
       <div className="p-1">
