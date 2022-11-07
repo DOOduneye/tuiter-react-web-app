@@ -14,8 +14,8 @@ const App = () => {
               <Routes>
                   <Route index element={<Labs/>}/>
                   <Route path="/hello" element={<HelloWorld/>}/>
-                  <Route path="/explore" element={<Tuiter />}/>
-                  <Route path="/tuiter" element={<Home />}/>
+                  <Route path="/explore" element={<Home />}/>
+                  <Route path="/tuiter" element={<Tuiter />}/>
               </Routes>
           </div>
       </BrowserRouter>
