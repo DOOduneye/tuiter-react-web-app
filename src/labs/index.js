@@ -1,10 +1,18 @@
-import A6 from "./a6";
+import Nav from "../nav";
+import Assignment6 from "./a6";
+import Assignment7 from "./a7";
+import {Routes, Route} from "react-router";
 
-const Labs = () => {
-    return(
-        <div>
-            <A6 />
-        </div>
-    );
+function Labs() {
+ return (
+   <div>
+     <Nav/>
+     <Routes>
+       <Route index element={<Assignment6/>}/>
+       <Route path="a7" element={<Assignment7/>}/>
+     </Routes>
+   </div>
+ );
 }
+
 export default Labs;
