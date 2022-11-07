@@ -5,7 +5,7 @@ const NavigationSidebar = ({active = 'explore'}) => {
         <div>
             <div className="list-group list-group-flush border rounded-3">
                 <a className={`list-group-item
-                    ${active === 'tuiter' ? 'active' : ''}`} href="home.html">
+                    ${active === 'tuiter' ? 'active' : ''}`} href="/tuiter">
                     Tuiter
                 </a>
 
