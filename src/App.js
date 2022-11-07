@@ -1,5 +1,6 @@
 import './App.css';
 import Labs from './labs/index.js';
+import Assignment6 from './labs/a6';
 import HelloWorld from "./labs/a6/hello-world";
 import Tuiter from "./tuiter/Tuiter";
 import Home from "./tuiter/Home";
@@ -13,7 +14,7 @@ const App = () => {
       <BrowserRouter>
           <div className="container">
               <Routes>
-                  <Route index element={<Labs/>}/>
+                  <Route index element={<Assignment6 />}/>
                   <Route path="a7" element={<Assignment7 />}/>
                   <Route path="hello" element={<HelloWorld/>}/>
                   <Route path="tuiter" element={<Home />}/>
