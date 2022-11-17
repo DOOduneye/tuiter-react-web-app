@@ -5,13 +5,17 @@ import TodoList from "./todo/todo-list";
 
 function Assignment6() {
  return (
+<<<<<<< HEAD
    <div>
+=======
+  <div>
+>>>>>>> 6a2f1ecdae064d719e76a8b9cf1695befc54a371
     <h1>Assignment 6</h1>
     <TodoList />
     <ConditionalOutput />
     <Styles/>
     <Classes/>
-   </div>
+  </div>
  );
 }
 export default Assignment6;

@@ -26,7 +26,7 @@ const ExploreComponent = () => {
     </header>
     
 
-  <ul className="nav nav-tabs mt-2">
+    <ul className="nav nav-tabs mt-2">
         <li className="nav-item">
             <a className="nav-link active rounded-1" href="for-you.html">
                 For You

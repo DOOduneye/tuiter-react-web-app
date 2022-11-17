@@ -5,12 +5,12 @@ const NavigationSidebar = ({active = 'explore'}) => {
         <div>
             <div className="list-group list-group-flush border rounded-3">
                 <a className={`list-group-item
-                    ${active === 'tuiter' ? 'active' : ''}`} href="home.html">
+                    ${active === 'tuiter' ? 'active' : ''}`} href="/tuiter">
                     Tuiter
                 </a>
 
                 <a className={`list-group-item
-                    ${active === 'home' ? 'active' : ''}`} href="/tuiter/">
+                    ${active === 'home' ? 'active' : ''}`} href="/tuiter">
                     <i className="fa-solid fa-home"></i>
                     <span className="p-1 d-none d-xl-inline d-xxl-inline">
                         Home
@@ -18,7 +18,7 @@ const NavigationSidebar = ({active = 'explore'}) => {
                 </a>
 
                 <a className={`list-group-item
-                    ${active === 'explore'?'active':''}`} href="/tuiter/">
+                    ${active === 'explore'?'active':''}`} href="/explore">
                     <i className="fa-solid fa-hashtag"></i>
                     <span className="p-1 d-none d-xl-inline d-xxl-inline">
                         Explore
