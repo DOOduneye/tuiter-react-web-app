@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { createTuit } from "../tuits/tuits-reducer";
+import { createTuitThunk } from "../../services/tuits-thunks";
 import { useDispatch } from "react-redux";
 
 const WhatsHappening = () => {
@@ -11,16 +11,16 @@ const WhatsHappening = () => {
         const newTuit = {
             tuit: whatsHappening
         }
-        dispatch(createTuit(newTuit));       
+        dispatch(createTuitThunk(newTuit));
     }
       
     return (
       <div className="row">
         <div className="col-auto">
-          <img src="res/nasa.png" width={60}/>
+          <img src="res/nasa.png" width={60} alt="profileImage" />
         </div>
         <div className="col-10">
-            <textarea value={whatsHappening} placeholder="What's happening?" className="form-control border-0" onChange={(event) => setWhatsHappening(event.target.value)} />
+          <textarea value={whatsHappening} placeholder="What's happening?" className="form-control border-0" onChange={(event) => setWhatsHappening(event.target.value)} />
             <div>
             <button className="rounded-pill btn btn-primary float-end mt-2 ps-3 pe-3 fw-bold" onClick={tuitClickHandler}>
                 Tuit
@@ -37,5 +37,5 @@ const WhatsHappening = () => {
         <div className="col-12"><hr/></div>
       </div>
     );
-   }
+  }
 export default WhatsHappening;

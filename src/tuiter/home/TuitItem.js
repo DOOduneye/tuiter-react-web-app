@@ -2,28 +2,31 @@ import TuitStats from "./TuitStats";
 import tuitStatsArray from "./tuitStats.json"
 
 import { useDispatch } from "react-redux";
-import { deleteTuit } from "../tuits/tuits-reducer";
+import { deleteTuitThunk } from "../../services/tuits-thunks";
 
-const PostSummaryItem = (
-    {post = {
-        "id": 123,
-        "userName": "SpaceX",
+const PostSummaryItem = ({post = {
+        "_id": 123,
+        "username": "SpaceX",
         "handle": "@spacex",
         "time": "2h",
-        "tuit": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed. Cybertruck is built with an exterior shell made for ultimate durability and passenger protection. Starting with a nearly impenetrable exoskeleton, every component is designed for superior strength and endurance, from Ultra-Hard 30X Cold-Rolled stainless-steel structural skin to Tesla armor glass. Cybertruck is built with an exterior shell made for ultimate durability and passenger protection. Starting with a nearly impenetrable exoskeleton, every component is designed for superior strength and endurance, from Ultra-Hard 30X Cold-Rolled stainless-steel structural skin to Tesla armor glass.",        "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
-        "replies": "123",
-        "retuits": "432",
+        "tuit": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed. Cybertruck is built with an exterior shell made for ultimate durability and passenger protection. Starting with a nearly impenetrable exoskeleton, every component is designed for superior strength and endurance, from Ultra-Hard 30X Cold-Rolled stainless-steel structural skin to Tesla armor glass. Cybertruck is built with an exterior shell made for ultimate durability and passenger protection. Starting with a nearly impenetrable exoskeleton, every component is designed for superior strength and endurance, from Ultra-Hard 30X Cold-Rolled stainless-steel structural skin to Tesla armor glass.",        
+        "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
+        "retuits": 432,
+        "replies": 123,
+        "topic": "Space",
         "likes": 234,
+        "liked": false,
         "image": "res/tesla.png"
-    }}
- ) => {
+}}) => {
+
 
     const dispatch = useDispatch();
 
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
 
+    
     const handleType = (type) => {
         switch (type) {
             case "replies":
@@ -38,59 +41,42 @@ const PostSummaryItem = (
     }
 
     return (
-     <section className="d-inline list-group list-group-flush p-0">
-        <div className="list-group-item border">
-           
-            <div className="d-flex flex-row">
+        <section className="d-inline list-group list-group-flush p-0">
+            <div className="list-group-item border">
 
-                <div className="d-flex flex-column px-3">
-                    <p className="circle">
-                        <img src={post.image} alt="summaryImage" />
-                    </p>
-                </div>
+                <div className="d-flex flex-row">
 
-                <div className="d-flex flex-column">
-                    <i className="bi bi-x-lg float-end" onClick={() => deleteTuitHandler(post._id)} />
-                    <p className="mb-0">
-                        <span className="fw-bolder">
-                            {post.userName}
-                        </span>
-                        <i className="fa-solid fa-check"></i>
-                        {post.handle}
-                        <small className="text-muted"> 
-                            {String.fromCharCode(183)} {post.time}
-                        </small>
-                    </p>
-                    <div className="ms-auto text-start">
-                        {post.tuit}
+                    <div className="d-flex flex-column px-3">
+                        <p className="circle">
+                            <img src={post.image} alt="summaryImage" />
+                        </p>
                     </div>
 
-                    <div className="d-flex flex-row gap-5 pt-2">
+                    <div className="d-flex flex-column">
+                        <i className="bi bi-x-lg float-end" onClick={() => deleteTuitHandler(post._id)} />
+                        <p className="mb-0">
+                            <span className="fw-bolder">
+                                {post.username}
+                            </span>
+                            <i className="fa-solid fa-check"></i>
+                            {post.handle}
+                            <small className="text-muted"> 
+                                {String.fromCharCode(183)} {post.time}
+                            </small>
+                        </p>
+                        <div className="ms-auto text-start">
+                            {post.tuit}
+                        </div>
 
-                        { tuitStatsArray.map(tuitStat => <TuitStats key={tuitStat.id} icon={tuitStat.icon} value={handleType(tuitStat.type)} type={tuitStat.type} />) }
-                       
+                        <div className="d-flex flex-row gap-5 pt-2">
+
+                            { tuitStatsArray.map(tuitStat => <TuitStats icon={tuitStat.icon} value={handleType(tuitStat.type)} type={tuitStat.type} key={tuitStat.type} />) }
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-     </section>
+        </section>
     );
-   };
-   export default PostSummaryItem;
+};
 
-
-//    <span>
-//    <i className="fa-regular fa-comment" /> {post.comments}
-// </span>
-
-// <span>
-//    <i className="fa-solid fa-retweet" /> {post.retuits}
-// </span>
-
-// <span>
-//    <i className="fa-regular fa-heart" /> {post.likes}
-// </span>
-
-// <span>
-//    <i className="fa-solid fa-share" />
-// </span>
+export default PostSummaryItem;

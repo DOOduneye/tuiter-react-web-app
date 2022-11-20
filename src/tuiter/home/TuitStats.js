@@ -1,11 +1,15 @@
 import { useState } from 'react';
+// import { useDispatch } from 'react-redux';
+// import { updateTuitThunk } from "../../services/tuits-thunks";
 
 const TuitStats = (props) => {
     const [clicked, setClicked] = useState(false);
-    const type = props.type;
+
+    // const dispatch = useDispatch();
 
     const handleSetClicked = () => {
         setClicked(!clicked);
+        // dispatch(updateTuitThunk({...props.tuit, likes: props.tuit.likes + 1}));
     }
 
     return (
