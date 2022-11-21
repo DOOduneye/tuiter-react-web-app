@@ -26,20 +26,6 @@ const PostSummaryItem = ({post = {
         dispatch(deleteTuitThunk(id));
     }
 
-    
-    const handleType = (type) => {
-        switch (type) {
-            case "replies":
-                return post.replies;
-            case "retuits": 
-                return post.retuits;
-            case "likes":
-                return post.likes;  
-            default:
-                return "";
-        }
-    }
-
     return (
         <section className="d-inline list-group list-group-flush p-0">
             <div className="list-group-item border">
@@ -69,8 +55,7 @@ const PostSummaryItem = ({post = {
                         </div>
 
                         <div className="d-flex flex-row gap-5 pt-2">
-
-                            { tuitStatsArray.map(tuitStat => <TuitStats icon={tuitStat.icon} value={handleType(tuitStat.type)} type={tuitStat.type} key={tuitStat.type} />) }
+                            <TuitStats post={post} />
                         </div>
                     </div>
                 </div>

@@ -9,7 +9,7 @@ const TuitList = () => {
   const dispatch = useDispatch();
 
   const loadTuits = () => {
-    dispatch(findTuitsThunk());
+    return dispatch(findTuitsThunk());
   };
   
   useEffect(() => {
